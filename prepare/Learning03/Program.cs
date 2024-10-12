@@ -1,30 +1,18 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-       
-        Fraction fraction1 = new Fraction(); 
-        Fraction fraction2 = new Fraction(5); 
-        Fraction fraction3 = new Fraction(3, 4); 
+        // Create video objects
+        Video video1 = new Video("Intro to C#", "John Doe", 300);
+        Video video2 = new Video("Advanced Python", "Jane Smith", 450);
+        Video video3 = new Video("JavaScript Tips", "Chris Johnson", 600);
 
-        // Вывод результатов
-        Console.WriteLine(fraction1.GetFractionString()); 
-        Console.WriteLine(fraction1.GetDecimalValue()); 
+        // Add comments to video1
+        video1.AddComment(new Comment("Alice", "Great introduction!"));
+        video1.AddComment(new Comment("Bob", "Very informative."));
+        video1.AddComment(new Comment("Charlie", "Helped me a lot, thanks!"));
 
-        Console.WriteLine(fraction2.GetFractionString()); 
-        Console.WriteLine(fraction2.GetDecimalValue()); 
-
-        Console.WriteLine(fraction3.GetFractionString()); 
-        Console.WriteLine(fraction3.GetDecimalValue()); 
-
-        
-        fraction3.SetNumerator(1);
-        fraction3.SetDenominator(3);
-        
-        
-        Console.WriteLine(fraction3.GetFractionString()); 
-        Console.WriteLine(fraction3.GetDecimalValue()); 
-    }
-}
+        // Add comments to video2
