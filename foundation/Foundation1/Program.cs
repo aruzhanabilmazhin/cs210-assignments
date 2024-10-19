@@ -1,4 +1,5 @@
-using System; // This should be at the very top
+// Program.cs
+using System;
 using System.Collections.Generic;
 
 class Program

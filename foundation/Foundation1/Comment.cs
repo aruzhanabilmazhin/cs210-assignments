@@ -1,13 +1,15 @@
+// Comment.cs
 public class Comment
 {
-    // Properties for commenter's name and text of the comment
-    public string CommenterName { get; set; }
-    public string Text { get; set; }
+    private string commenterName;
+    private string text;
 
-    // Constructor
     public Comment(string commenterName, string text)
     {
-        CommenterName = commenterName;
-        Text = text;
+        this.commenterName = commenterName;
+        this.text = text;
     }
+
+    public string CommenterName => commenterName;
+    public string Text => text;
 }
